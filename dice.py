@@ -1,34 +1,16 @@
-'''Hi player welcome to the to WIzard fighting game this game is inspired by Legendary movie series Harry potter.
-This game will let you experience the chronicles of harry potter through a adventarous text based game.
-SO SHALL WE BEGIN?? OR YOU ARE SCARED'''
-
 import random
-from os import system
-import os
-import time
 
-##dice
-import random
- 
- 
-x = "y"
+
+class dicing:
+     def dice():
+      x="y"
+
   
 while x == "y":
      
-
-    #CHARACTERS ACCORDING TO YOU RESULT
-    '''
-    
-       1= Harry Potter
-       2= Rupert Grint
-       3= Hermione Granger
-       4= Draco Malfoy
-       5= Rubeus Hagrid
-       6= Albus Dumbledore'''
-
-
-
-
+    # Generates a random number
+    # between 1 and 6 (including
+    # both 1 and 6)
     no = random.randint(1,6)
      
     if no == 1:
@@ -70,7 +52,6 @@ while x == "y":
          
     x=input("press y to roll again and n to exit:")
     print("\n")
-
-print= input("what is the name of your character according to rules??")
-
-if a= input()
+    
+msg=dicing()   
+msg.dice
