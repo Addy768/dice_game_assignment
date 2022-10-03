@@ -173,4 +173,21 @@ user_health=100
 comp_health=100
 comp_spell=""
 should_continue=True
+def exit_game():
+    global should_continue
+    should_continue=False
+    
+
+    
+    
+def game(name):
+    global comp_health
+    global user_health
+    global difficulty
+    damage=random.randint(1, 20)
+    health=random.randint(1,20)
+    if difficulty=="easy":
+        comp_spell=random.choice(comp_spells_easy)
+    else:
+
 
