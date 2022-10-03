@@ -189,5 +189,24 @@ def game(name):
     if difficulty=="easy":
         comp_spell=random.choice(comp_spells_easy)
     else:
-
-
+        comp_spell=random.choice(comp_spells_hard)
+    
+    user_spell=input("\n\nChoose a spell to fight your enemy: ").lower()
+    if user_spell>="0" and user_spell<="9":
+        print(f"\n\n{name} attacked with {attack_spells[int(user_spell)-1]}")
+        print("Damage Dealt to Enemy")
+        comp_health-=damage
+        #print(comp_health)
+    elif user_spell>="a" and user_spell<="d":
+        print(f"\n\n{name} healed themselves with {user_spell}")
+        print("Health Healed")
+        user_health+=health
+        #print(user_health)
+    if user_spell>="e"and user_spell<="h" and comp_spell in attack_spells:
+        print(f"\n\nEnemy attacked with {comp_spell} which {name} defended with {user_spell}")
+        print(f"0 Damage done to you")
+        print("0 Damage Done to you")
+    if comp_spell in attack_spells:
+        print(f"\n\nEnemy attacked with {comp_spell}")
+        print("Damage dealt to You")
+        user_health-=damage
