@@ -8,13 +8,13 @@ import random
 from os import system
 import os
 import time
-
 ##dice
 import random
 from tkinter import N
 
 from unicodedata import name
 
+#importing the dice
 import dice
 gm=dice.dicing()
 gm.dice()
