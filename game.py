@@ -32,32 +32,32 @@ import harry
 if(a=="1"):
     albuss=albus.name1()
     albuss.albusprint()
-
+print()
 b= input("press 2 for information")
 if(b=="2"):
     dracoo=dracomalfoy.name2()
     dracoo.dracoprint()
-
+print()
 c= input("press 3 for information")
 if(c=="3"):
     hary=harry.name3()
     hary.harryprint()
-
+print()
 d= input("press 4 for information")
 if(d=="4"):
     hermoinee=hermoine.name4()
     hermoinee.hermoineprint()
-
+print()
 e= input("press 5 for information")
 if(e=="5"):
     rubeuss=rubeus.name5()
     rubeuss.rubeusprint()
-
+print()
 f= input("press 6 for infpormation")
 if(f=="6"):
     rupertt=rupert.name6()
     rupertt.rupertprint()
-
+print()
 
 #text will be used to welcome to game,exit the game,when it draws or the specialty the player
 
